@@ -1,0 +1,2 @@
+import '@fancyapps/fancybox'
+

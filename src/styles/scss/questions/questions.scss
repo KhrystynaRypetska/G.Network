@@ -1,0 +1,99 @@
+.questions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  @media (max-width:767px) {
+    padding-top: 30px;
+  }
+  @media (max-width:480px) {
+    padding-top: 10px;
+  }
+  &__title {
+    width: 15%;
+    font-family: $fontPoppinsBold;
+    font-size: 70px;
+
+    color: $textColor;
+    text-align: center;
+    @media (max-width: 992px) {
+      width: 100%;
+      font-size: 50px;
+    }
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
+    @media (max-width: 480px) {
+      font-size: 23px;
+    }
+
+  }
+
+  &__text {
+    font-family: $fontPoppinsMedium;
+    font-size: 16px;
+    line-height: 24px;
+    width: 70%;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+    @media (max-width: 480px) {
+      font-size: 10px;
+    }
+
+    &__answer {
+      p {
+        padding-left: 45px;
+        padding-bottom: 15px;
+      }
+
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    &__img {
+      position: absolute;
+
+      font-size: 32px;
+      color: #555A84;
+      top: 11px;
+      left: 0;
+      transition: transform .2s;
+      padding-bottom: 50px;
+      @media (max-width:767px) {
+        padding-bottom: 30px;
+      }
+      @media (max-width:480px) {
+        padding-bottom: 10px;
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+
+      padding: 15px 0 15px 45px;
+
+      position: relative;
+
+      cursor: pointer;
+      transition: 0.4s;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+      @media (max-width: 480px) {
+        font-size: 12px;
+      }
+
+      &.active {
+        .icon-cheveron-down {
+          color: $textColor;
+          transform: scale(-1);
+        }
+      }
+    }
+  }
+}

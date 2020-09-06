@@ -1,0 +1,160 @@
+.our-approach {
+  &__title {
+    font-family: $fontPoppinsRegular;
+    font-size: 36px;
+
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+
+    color: #000000;
+    max-width: 800px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    @media (max-width:480px) {
+      font-size: 15px;
+      line-height: 23px;
+    }
+  }
+  &__wrapper {
+    margin-left: 10px;
+    padding-bottom: 50px;
+    @media (max-width:768px) {
+      padding-bottom: 30px;
+    }
+    @media (max-width:480px) {
+      padding-bottom: 10px;
+    }
+  }
+  &__img {
+    margin-bottom: 70px;
+
+    .slick-slide {
+      margin:  0 5px;
+    }
+
+    &__box {
+      max-width: 130px;
+      max-height: 130px;
+
+      width: 100%;
+      height: 100%;
+
+      margin: 0 auto;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__text {
+      margin-top: 35px;
+      width: 100%;
+      background-color: #000;
+      p {
+        font-family: $fontPoppinsMedium;
+        font-size: 15px;
+
+        color: #F7F6F4;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+    }
+    &__item {
+      margin: 0 5px;
+      @media (max-width: 992px) {
+        padding-bottom: 20px;
+      }
+      &:first-child {
+        margin-right: 0;
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+
+
+    }
+
+  }
+  &__text {
+    &__title {
+      font-family: $fontPoppinsMedium;
+      font-size: 24px;
+
+      color: $textColor;
+      margin-bottom: 15px;
+      margin-top: 15px;
+      @media (max-width:768px) {
+        font-size: 20px;
+      }
+      @media (max-width:480px) {
+        font-size: 12px;
+      }
+    }
+    &__descr {
+      font-family: $fontPoppinsMedium;
+      font-size: 16px;
+      line-height: 24px;
+      @media (max-width:767px) {
+        font-size: 15px;
+      }
+      @media (max-width:480px) {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.our-approach__text__box {
+  position: relative;
+  padding: 15px 20px;
+}
+
+.our-approach__text__img {
+  display: block;
+
+  position: absolute;
+  left: .5px;
+  top: 0;
+  bottom: 0;
+
+  width: 1px;
+
+  &:after, &:before {
+    content: '';
+    display: block;
+    position: absolute;
+
+    width: 4px;
+    height: 4px;
+    left: 0;
+    background-color: $textColor;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  span {
+    position: absolute;
+
+    width: 1px;
+    height: 75%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    left: 0;
+
+    border-right: 1px dashed $textColor;
+    z-index: 1;
+  }
+}

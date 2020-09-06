@@ -1,0 +1,144 @@
+.what-happening {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 50px;
+  @media (max-width: 992px) {
+    padding-top:30px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 0;
+  }
+  @media (max-width: 992px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  &__slider {
+    max-width: 720px;
+    width: 60%;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__wrap {
+    max-width: 530px;
+    width: calc(40% - 20px);
+    @media (max-width: 992px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__title {
+    font-family: $fontPoppinsBold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000;
+    padding-bottom: 15px;
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
+    @media (max-width: 480px) {
+      font-size: 15px;
+    }
+  }
+  &__text {
+    font-family: $fontPoppinsMedium;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 25px;
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+    @media (max-width: 480px) {
+      font-size: 10px;
+    }
+  }
+}
+.prev-arrow {
+  &:before {
+    content: "\e903";
+    transform: rotateY(180deg);
+  }
+}
+.next-arrow {
+  &:before {
+    content: "\e903";
+  }
+}
+.prev-arrow, .next-arrow {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  &:before {
+    display: inline-block;
+    font-family: 'icomoon' !important;
+    font-size: 25px;
+    color: #fff;
+  }
+}
+
+.slider-happening__arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height:  50px;
+  width: 100%;
+
+  background: #000000;
+  opacity: 0.9;
+  margin-top: -3px;
+}
+.happening__dots{
+  display: flex;
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background-color: transparent;
+
+    button {
+      display: block;
+      border: none;
+      font-size: 0;
+      cursor: pointer;
+
+      padding: 5px;
+      border-radius: 50%;
+
+      color: #fff;
+      background-color: #fff;
+      &:focus {
+        outline: none;
+      }
+    }
+    &.slick-active {
+      border-color: #fff;
+      button {
+        background-color: #fff !important;
+      }
+    }
+  }
+
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
