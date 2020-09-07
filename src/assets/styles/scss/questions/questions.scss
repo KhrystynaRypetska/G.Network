@@ -63,13 +63,6 @@
       top: 11px;
       left: 0;
       transition: transform .2s;
-      padding-bottom: 50px;
-      @media (max-width:767px) {
-        padding-bottom: 30px;
-      }
-      @media (max-width:480px) {
-        padding-bottom: 10px;
-      }
     }
 
     &__title {
@@ -81,6 +74,9 @@
 
       cursor: pointer;
       transition: 0.4s;
+
+      margin: 0;
+
       @media (max-width: 768px) {
         font-size: 16px;
       }

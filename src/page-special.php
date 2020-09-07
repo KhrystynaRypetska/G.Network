@@ -1,3 +1,10 @@
+<?php
+/**
+* Template Name: Special page
+*
+*/
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,14 +13,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>G.Network</title>
-<link href="assets/styles/chunks/1.css" rel="stylesheet"><link href="assets/styles/main.css" rel="stylesheet"></head>
+<?php wp_head(); ?>
+<link href="<?= get_template_directory_uri() . '/assets/styles/chunks/1.css'?>" rel="stylesheet"><link href="<?= get_template_directory_uri() . '/assets/styles/main.css'?>" rel="stylesheet"></head>
 <body>
 <div class="main-wrapper">
     <header class="header">
         <div class="container">
             <div class="header__logo">
                 <a href="https://www.g.network/queens-gate-and-earls-court-community-consultation" class="header__logo__text">
-                    <img src="./assets/images/logo.png" alt="img">
+                    <img src="<?= get_template_directory_uri() . '/assets/images/logo.png'?>" alt="img">
                 </a>
             </div>
         </div>
@@ -42,7 +50,7 @@
             </div>
 
         </section>
-        <section class="section section--information" id="information" style="background-image: url('./assets/images/information.png')">
+        <section class="section section--information" id="information" style="background-image: url(<?= get_template_directory_uri() . '/assets/images/information.png'?>)">
             <div class="container">
                 <div class="information">
                     <div class="information__wrapper">
@@ -56,6 +64,10 @@
                             </li>
                             <li class="information__nav__list">
                                 <span class="icon-arrow-right"></span>
+                                <a href="#who-we-are" class="information__nav__text">Who are G.Network?</a>
+                            </li>
+                            <li class="information__nav__list">
+                                <span class="icon-arrow-right"></span>
                                 <a href="#properties" class="information__nav__text">What is high-speed ‘full fibre’ broadband?</a>
                             </li>
                             <li class="information__nav__list">
@@ -65,11 +77,6 @@
                             <li class="information__nav__list">
                                 <span class="icon-arrow-right"></span>
                                 <a href="#map" class="information__nav__text">When is my street being connected?</a>
-                            </li>
-
-                            <li class="information__nav__list">
-                                <span class="icon-arrow-right"></span>
-                                <a href="#who-we-are" class="information__nav__text">Who are G.Network?</a>
                             </li>
                             <li class="information__nav__list">
                                 <span class="icon-arrow-right"></span>
@@ -86,19 +93,19 @@
                     <div class="what-happening__slider">
                         <div class="what-happening__img js-slider-happening">
                             <div class="what-happening__img__item">
-                                <img src="./assets/images/heapping-slide/hepping.png" alt="">
+                                <img src="<?= get_template_directory_uri() . '/assets/images/heapping-slide/hepping.png'?>" alt="">
                             </div>
                             <div class="what-happening__img__item">
-                                <img src="./assets/images/heapping-slide/G-Network_Visitors23 (1).jpg" alt="">
+                                <img src="<?= get_template_directory_uri() . '/assets/images/heapping-slide/G-Network_Visitors23 (1).jpg'?>" alt="">
                             </div>
                             <div class="what-happening__img__item">
-                                <img src="./assets/images/heapping-slide/G-Network_Clean_10 (1).jpg" alt="">
+                                <img src="<?= get_template_directory_uri() . '/assets/images/heapping-slide/G-Network_Clean_10 (1).jpg'?>" alt="">
                             </div>
                             <div class="what-happening__img__item">
-                                <img src="./assets/images/heapping-slide/Community events 3.jpg" alt="">
+                                <img src="<?= get_template_directory_uri() . '/assets/images/heapping-slide/Community events 3.jpg'?>" alt="">
                             </div>
                             <div class="what-happening__img__item">
-                                <img src="./assets/images/heapping-slide/Community events 2.jpg" alt="">
+                                <img src="<?= get_template_directory_uri() . '/assets/images/heapping-slide/Community events 2.jpg'?>" alt="">
                             </div>
                         </div>
                         <div class="js-slider-happening__arrows slider-happening__arrows">
@@ -139,7 +146,7 @@
                             Who are G.Network?
                         </h3>
                         <p class="who-we-are__item__text">
-                            G.Network is a fast growing provider of ful-fibre internet connections. We’re working
+                            G.Network is a fast growing provider of full-fibre internet connections. We’re working
                             hard to provide affordable, 100% full fibre connectivity to businesses and residents
                             across London who are under-served by the existing broadband infrastructure.
                         </p>
@@ -156,7 +163,7 @@
                     </div>
                     <div class="who-we-are__image">
                         <div class="who-we-are__image__img">
-                            <img src="./assets/images/Company-Vision.png" alt="img">
+                            <img src="<?= get_template_directory_uri() . '/assets/images/Company-Vision.png'?>" alt="img">
                         </div>
                     </div>
                 </div>
@@ -170,25 +177,25 @@
                             What is high-speed full-fibre broadband?
                         </h3>
                         <p class="properties__text__subtitle">
-                            The majority of Lonon’s broadband connections are a mix of copper and fibre. Broadband
+                            The majority of London’s broadband connections are a mix of copper and fibre. Broadband
                             connectivity can be split into 3 categories.
                         </p>
                     </div>
                     <div class="properties__wrapper">
                         <div class="properties__wrapper__item">
                             <div class="properties__img">
-                                <img src="./assets/images/1.png" alt="">
+                                <img src="<?= get_template_directory_uri() . '/assets/images/1.png'?>" alt="">
                             </div>
                             <div class="properties__wrapper__text">
                                 <p class="properties__text-img">
-                                    <span class="text-color">ADSL2+</span>, which uses mostly copper all the way to
+                                    <span class="text-color">ADSL2+</span>, which uses mostly copper all the way from
                                     the exchange
                                 </p>
                             </div>
                         </div>
                         <div class="properties__wrapper__item">
                             <div class="properties__img">
-                                <img src="./assets/images/2.png" alt="">
+                                <img src="<?= get_template_directory_uri() . '/assets/images/2.png'?>" alt="">
                             </div>
                             <div class="properties__wrapper__text">
                                 <p class="properties__text-img">
@@ -200,7 +207,7 @@
                         </div>
                         <div class="properties__wrapper__item">
                             <div class="properties__img">
-                                <img src="./assets/images/3.png" alt="">
+                                <img src="<?= get_template_directory_uri() . '/assets/images/3.png'?>" alt="">
                             </div>
                             <div class="properties__wrapper__text">
                                 <p class="properties__text-img">
@@ -233,15 +240,6 @@
                     <div class="benefits__wrapper">
                         <div class="benefits__item">
                             <h5 class="benefits__item__title">
-                                Faster speeds for less
-                            </h5>
-                            <p class="benefits__item__text">
-                                Full fibre delivers higher speeds for the same price as the current alternatives.
-                                Our prices start from just £22 per month for our residential 150 mbps package
-                            </p>
-                        </div>
-                        <div class="benefits__item">
-                            <h5 class="benefits__item__title">
                                 Speeds in excess of 900mbps!
                             </h5>
                             <p class="benefits__item__text">
@@ -249,6 +247,15 @@
                                 G.Network FTTP connections can deliver speeds of over 900 megabits per second
                                 (Mbps) - This is over 13 times
                                 faster!
+                            </p>
+                        </div>
+                        <div class="benefits__item">
+                            <h5 class="benefits__item__title">
+                                Faster speeds for less
+                            </h5>
+                            <p class="benefits__item__text">
+                                Full fibre delivers higher speeds for the same price as the current alternatives.
+                                Our prices start from just £22 per month for our residential 150 mbps
                             </p>
                         </div>
                         <div class="benefits__item">
@@ -289,7 +296,7 @@
                         </div>
                     </div>
                     <div class="benefits__img">
-                        <img src="./assets/images/Difference_between_FTTC-FTTP.png" alt="img">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/Difference_between_FTTC-FTTP.png'?>" alt="img">
                     </div>
                 </div>
             </div>
@@ -298,7 +305,7 @@
             <div class="container">
                 <div class="technology">
                     <div class="technology__img">
-                        <img src="./assets/images/6) - Why Choose Full Fibre A0 (2).jpg" alt="">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/6) - Why Choose Full Fibre A0 (2).jpg'?>" alt="">
                     </div>
                     <div class="technology__wrapper">
                         <div class="technology__wrapper__item">
@@ -309,8 +316,8 @@
                         <div class="technology__wrapper__item">
                             <p class="technology__text"> <span class="technology__text-title">Business:</span>
                                 Work more effectively with faster connections to clients and customers.
-                                Better connections speeds mean that business can make even better use of cloud-based
-                                software and data storage.
+                                Better connection speeds mean that businesses can make even better use of cloud-based
+                                software and data storage
                             </p>
                         </div>
                     </div>
@@ -326,7 +333,7 @@
                     <div class="benefits-full-fiber__wrapper">
                         <div class="benefits-full-fiber__wrapper__item">
                             <div class="benefits-full-fiber__img">
-                                <img src="./assets/images/img-london/7) - FTTP Benifits-Full Fibre (3).jpg" alt="img">
+                                <img src="<?= get_template_directory_uri() . '/assets/images/img-london/7) - FTTP Benifits-Full Fibre (3).jpg'?>" alt="img">
                             </div>
                             <div class="benefits-full-fiber__text">
                                 <h4 class="benefits-full-fiber__text__title">
@@ -347,7 +354,7 @@
                         </div>
                         <div class="benefits-full-fiber__wrapper__item">
                             <div class="benefits-full-fiber__img">
-                                <img src="./assets/images/img-london/7) - FTTP Benifits-Full Fibre (1).jpg" alt="img">
+                                <img src="<?= get_template_directory_uri() . '/assets/images/img-london/7) - FTTP Benifits-Full Fibre (1).jpg'?>" alt="img">
                             </div>
                             <div class="benefits-full-fiber__text">
                                 <h4 class="benefits-full-fiber__text__title">
@@ -368,7 +375,7 @@
                         </div>
                         <div class="benefits-full-fiber__wrapper__item">
                             <div class="benefits-full-fiber__img">
-                                <img src="./assets/images/img-london/7) - FTTP Benifits-Full Fibre (2) – копія.jpg" alt="img">
+                                <img src="<?= get_template_directory_uri() . '/assets/images/img-london/7) - FTTP Benifits-Full Fibre (2) – копія.jpg'?>" alt="img">
                             </div>
                             <div class="benefits-full-fiber__text">
                                 <h4 class="benefits-full-fiber__text__title">
@@ -412,8 +419,8 @@
                                     Queens Gate
                                 </p>
                             </div>
-                            <a href="./assets/images/Queen's Gate Ward.jpg" data-fancybox >
-                                <img src="./assets/images/Queen's Gate Ward (1).jpg" alt="img" />
+                            <a href="<?= get_template_directory_uri() . '/assets/images/Queen\'s Gate Ward.jpg'?>" data-fancybox >
+                                <img src="<?= get_template_directory_uri() . '/assets/images/Queen\'s Gate Ward (1).jpg'?>" alt="img" />
                                 <div class="map__images__icon">
                                     <span class="icon-search"></span>
                                 </div>
@@ -426,8 +433,8 @@
                                    Earls Court
                                </p>
                            </div>
-                            <a href="./assets/images/Earls Court (1).jpg" data-fancybox >
-                                <img src="./assets/images/Earls Court.jpg" alt="img" />
+                            <a href="<?= get_template_directory_uri() . '/assets/images/Earls Court (1).jpg'?>" data-fancybox >
+                                <img src="<?= get_template_directory_uri() . '/assets/images/Earls Court.jpg'?>" alt="img" />
                                 <div class="map__images__icon">
                                     <span class="icon-search"></span>
                                 </div>
@@ -442,13 +449,13 @@
             <div class="container">
                 <div class="our-approach">
                     <h5 class="our-approach__title">
-                        Our approach to your street will follow similar process to the one below:
+                        Our approach to your street will follow a similar process to the one below:
                     </h5>
                     <div class="our-approach__wrap">
                         <div class="our-approach__img js-slider-approach">
                             <div class="our-approach__img__item">
                                 <div class="our-approach__img__box">
-                                    <img src="./assets/images/our-approach/1) - Installation Process - Approved.png" alt="img">
+                                    <img src="<?= get_template_directory_uri() . '/assets/images/our-approach/1) - Installation Process - Approved.png'?>" alt="img">
                                 </div>
                                 <div class="our-approach__img__text">
                                     <p>Research</p>
@@ -456,7 +463,7 @@
                             </div>
                             <div class="our-approach__img__item">
                                 <div class="our-approach__img__box">
-                                    <img src="./assets/images/our-approach/1) - Installation Process - Approved (1).png" alt="img">
+                                    <img src="<?= get_template_directory_uri() . '/assets/images/our-approach/1) - Installation Process - Approved (1).png'?>" alt="img">
                                 </div>
                                 <div class="our-approach__img__text">
                                     <p>Consultation</p>
@@ -464,7 +471,7 @@
                             </div>
                             <div class="our-approach__img__item">
                                 <div class="our-approach__img__box">
-                                    <img src="./assets/images/our-approach/1) - Installation Process - Approved (2).png" alt="img">
+                                    <img src="<?= get_template_directory_uri() . '/assets/images/our-approach/1) - Installation Process - Approved (2).png'?>" alt="img">
                                 </div>
                                 <div class="our-approach__img__text">
                                    <p> Permits</p>
@@ -472,7 +479,7 @@
                             </div>
                             <div class="our-approach__img__item">
                                 <div class="our-approach__img__box">
-                                    <img src="./assets/images/our-approach/1) - Installation Process - Approved (3).png" alt="img">
+                                    <img src="<?= get_template_directory_uri() . '/assets/images/our-approach/1) - Installation Process - Approved (3).png'?>" alt="img">
                                 </div>
                                 <div class="our-approach__img__text">
                                     <p>Scheduling</p>
@@ -480,7 +487,7 @@
                             </div>
                             <div class="our-approach__img__item">
                                 <div class="our-approach__img__box">
-                                    <img src="./assets/images/our-approach/1) - Installation Process - Approved (4).png" alt="img">
+                                    <img src="<?= get_template_directory_uri() . '/assets/images/our-approach/1) - Installation Process - Approved (4).png'?>" alt="img">
                                 </div>
                                 <div class="our-approach__img__text">
                                    <p> Digging</p>
@@ -488,7 +495,7 @@
                             </div>
                             <div class="our-approach__img__item">
                                 <div class="our-approach__img__box">
-                                    <img src="./assets/images/our-approach/1) - Installation Process - Approved (5).png" alt="img">
+                                    <img src="<?= get_template_directory_uri() . '/assets/images/our-approach/1) - Installation Process - Approved (5).png'?>" alt="img">
                                 </div>
                                 <div class="our-approach__img__text">
                                     <p>Connection</p>
@@ -496,7 +503,7 @@
                             </div>
                             <div class="our-approach__img__item">
                                 <div class="our-approach__img__box">
-                                    <img src="./assets/images/our-approach/1) - Installation Process - Approved (6).png" alt="img">
+                                    <img src="<?= get_template_directory_uri() . '/assets/images/our-approach/1) - Installation Process - Approved (6).png'?>" alt="img">
                                 </div>
                                 <div class="our-approach__img__text">
                                    <p> Live</p>
@@ -512,7 +519,7 @@
                                     <span class="our-approach__text__img"><span></span></span>
                                     <p class="our-approach__text__descr">
                                         We work out where we can install our new fibre optic infrastructure.  This is
-                                        based on a number of factors, such as the number of residents and business on a
+                                        based on a number of factors, such as the number of residents and businesses on a
                                         particular street, as well as whether the buildings are still using copper-based
                                         broadband.
                                     </p>
@@ -525,8 +532,8 @@
                                 <div class="our-approach__text__box">
                                     <span class="our-approach__text__img"><span></span></span>
                                     <p class="our-approach__text__descr">
-                                        before we start work we consult with local businesses and residents in as
-                                        well as the council to explain the upgrade process
+                                        Before we start work we consult with local businesses and residents in
+                                        the area as well as the council to explain the upgrade process
                                     </p>
                                 </div>
                             </div>
@@ -599,7 +606,7 @@
                 <div class="we-use">
                     <div class="we-use__wrapper">
                         <div class="we-use__img">
-                            <img src="./assets/images/G-Network_Clean.png" alt="">
+                            <img src="<?= get_template_directory_uri() . '/assets/images/G-Network_Clean.png'?>" alt="">
                         </div>
                         <div class="we-use__text">
                             <h3 class="we-use__title">
@@ -607,10 +614,9 @@
                             </h3>
                             <ul class="we-use__list">
                                 <li><span class="circle"></span>
-                                    <p>Our own trained and experienced surveyors and engineers to manage our street upgrade programme
+                                    <p>Friendly, London based customer service and support team
                                 </p></li>
-                                <li> <span class="circle"></span><p>A world-class installation team, taking care of
-                                    all the installation admin, including getting any permissions from landlords.
+                                <li> <span class="circle"></span><p>A world-class installation team, taking care of the whole installation process, including getting any permissions from landlords.
                                 </p></li>
                                 <li><span class="circle"></span><p>Friendly, UK based customer service support.</p></li>
                                 <li><span class="circle"></span>
@@ -629,7 +635,7 @@
                         Customer Feedback
                     </h3>
                     <div class="blockquotes__wrapper">
-                        <img src="./assets/images/Testimonials.jpg" alt="img">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/Testimonials.jpg'?>" alt="img">
                     </div>
                 </div>
             </div>
@@ -647,24 +653,24 @@
                         <p class="contact-form__text">
                             Register your interest and we'll let you know when we're ready to connect you to 100% full fibre.
                             Or, if you have any questions about the work we’re doing in your area, please email us on
-                            <a href="shareyourviews@g.network">shareyourviews@g.network</a>
+                            <a href="fullfibre.rollout@g.network">fullfibre.rollout@g.network</a>
                         </p>
                         <p class="contact-form__text">
                             We also have a frequently asked question guide at the bottom of this page.
                         </p>
                         <div class="contact-form__img">
-                            <img src="./assets/images/Community_events .png" alt="img">
+                            <img src="<?= get_template_directory_uri() . '/assets/images/Community_events .png'?>" alt="img">
                         </div>
 
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section section--questions" id="questions" style="background-image: url('./assets/images/Rectangle.png')">
+        <section class="section section--questions" id="questions" style="background-image: url(<?= get_template_directory_uri() . '/assets/images/Rectangle.png'?>)">
             <div class="container">
                 <div class="questions">
                     <h3 class="questions__title">FAQs</h3>
-                    <div class="questions__text js--accordion">
+                    <div class="questions__text">
                         <div class="questions__text__item">
                             <h5 class="questions__text__title js-accordion">
                                 <span class="questions__text__img icon-cheveron-down"></span>
@@ -733,5 +739,7 @@
         </section>
     </main>
 </div>
-<script src="assets/js/chunks/1.js"></script><script src="assets/js/main.js"></script></body>
+<script src="<?= get_template_directory_uri() . '/assets/scripts/chunks/1.js'?>"></script><script src="<?= get_template_directory_uri() . '/assets/scripts/main.js'?>"></script>
+<?php  wp_footer(); ?>
+</body>
 </html>

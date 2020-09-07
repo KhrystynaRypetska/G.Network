@@ -109,8 +109,8 @@ const plugins = () => {
       ],
     }),
     new MiniCssExtractPlugin({
-      filename: 'styles/[name].css',
-      chunkFilename: 'styles/chunks/[id].css',
+      filename: 'assets/styles/[name].css',
+      chunkFilename: 'assets/styles/chunks/[id].css',
     }),
 
     new webpack.ProvidePlugin({
@@ -130,11 +130,11 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry:
-    ['./js/index.js'],
+    ['./assets/js/index.js'],
   output: {
-    filename: 'js/[name].js',
+    filename: 'assets/js/[name].js',
     path: path.resolve(__dirname, 'dist'),
-    chunkFilename: 'js/chunks/[id].js',
+    chunkFilename: 'assets/js/chunks/[id].js',
   },
   resolve: {
     extensions: ['.js', '.json', '.png'],
@@ -170,8 +170,8 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'assets/images/',
+              name: 'assets/images/[name].[ext]',
+              include: [/images/]
             },
           }
         ]
@@ -182,8 +182,8 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'assets/fonts/',
+              name: '/fonts/[name].[ext]',
+              include: [/fonts/]
             },
           },
         ]
