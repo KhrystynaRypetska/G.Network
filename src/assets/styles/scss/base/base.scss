@@ -19,6 +19,13 @@ body, html {
   &.no-scroll {
     overflow: hidden;
   }
+
+  ul, ol {
+    list-style-type: none;
+    margin: 0;
+    list-style-position: inherit;
+    line-height: 1;
+  }
 }
 
 body {
