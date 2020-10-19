@@ -1,26 +1,4 @@
 @font-face {
-    font-family: 'Poppins-Bold';
-    src: url("../fonts/Poppins-Bold.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: 'Poppins-Medium';
-    src: url("../fonts/Poppins-Medium.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: 'Poppins-Regular';
-    src: url("../fonts/Poppins-Regular.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?ybgg72');
-    src:  url('../fonts/icomoon.eot?ybgg72#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?ybgg72') format('truetype'),
-    url('../fonts/icomoon.woff?ybgg72') format('woff'),
-    url('../fonts/icomoon.svg?ybgg72#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+  font-family: 'Roboto-Medium';
+  src: url("../fonts/Roboto-Medium.ttf) format('truetype');
 }
