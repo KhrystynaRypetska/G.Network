@@ -1,0 +1,32 @@
+.btn {
+  display: block;
+
+  max-width: 150px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 12px 24px;
+
+  color: $text;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-family: $fontPoppinsRegular;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color, background-color, border-color .3s ease-in-out;
+  border: 1px solid transparent;
+
+  &--main {
+    color: $textWhite;
+    background-color: $Color;
+
+    &:hover {
+      background-color: #fff;
+      color: $textColor;
+
+      border-color: #00B9F0;
+      transition: color, background-color, border-color .3s ease-in-out;
+    }
+  }
+}

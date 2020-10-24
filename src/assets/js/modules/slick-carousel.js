@@ -3,7 +3,6 @@ import jQuery from 'jquery';
 import $ from 'jquery';
 window.$ = jQuery;
 
-
 export default class Carousel {
 
   sliderHandler (className) {

@@ -1,0 +1,113 @@
+
+.custom-select {
+  position: relative;
+
+  min-width: 200px;
+  margin: 0 15px;
+
+  @media (max-width: 768px) {
+    min-width: auto;
+    width: 100%;
+
+    margin: 0 0 15px;
+  }
+
+  select {
+    display: none;
+  }
+
+  &-selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px 16px;
+    min-height: calc(48px - 18px);
+
+    border: 1px solid #D2D4E5;
+    background-color: #ffffff;
+
+    color: $text;
+    font-family: $fontPoppinsRegular;
+    font-size: 18px;
+    line-height: 24px;
+
+    transition: border-color .3s ease-in-out, color .3s ease-in-out;
+    cursor: pointer;
+
+
+
+    &:after {
+      content: "\e902";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 15px;
+      height: 15px;
+
+      margin-left: 15px;
+
+      color: $Gray1;
+      font-size: 22px;
+      font-family: 'icomoon' !important;
+      transition: transform .3s ease-in-out, color .3s ease-in-out;
+    }
+
+    &.arrow-active {
+      border-color: $Color;
+      //color: $textColor;
+      transition: border-color .3s ease-in-out, color .3s ease-in-out;
+
+      &:after {
+        transform: scale(-1);
+        color: $Color;
+
+        transition: transform .3s ease-in-out, color .3s ease-in-out;
+      }
+    }
+  }
+
+  &-items {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    min-width: 120%;
+
+    background-color: #fff;
+    box-shadow: 0px 0px 16px rgba(85, 90, 132, 0.16);
+    z-index: 99;
+
+    @media (max-width: 768px) {
+      min-width: 100%;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+
+      min-height: calc(48px - 24px);
+      padding: 12px 24px;
+      margin: 7px 0;
+
+      color: $text;
+      font-family: $fontPoppinsRegular;
+      font-size: 18px;
+      line-height: 24px;
+      cursor: pointer;
+
+      &:hover {
+        color: $textColor;
+        background-color: $lightBlue;
+      }
+    }
+  }
+  &-hide {
+    display: none;
+  }
+
+  .same-as-selected {
+    color: #00A7D8;
+    background-color: #D6F4FD;
+  }
+}

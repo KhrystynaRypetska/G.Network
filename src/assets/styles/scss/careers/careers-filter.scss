@@ -1,0 +1,15 @@
+
+.careers {
+  &_filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 48px;
+    margin-bottom: 36px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+}
