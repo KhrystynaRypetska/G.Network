@@ -1,5 +1,4 @@
 
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -15,11 +14,37 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-down:before {
+  content: "\e904";
+  color: #555a84;
+}
+.icon-left:before {
+  content: "\e905";
+  color: #555a84;
+}
+.icon-mdi_office-building-outline:before {
+  content: "\e907";
+  color: #555a84;
+}
+.icon-right:before {
+  content: "\e908";
+  color: #555a84;
+}
+.icon-Up:before {
+  content: "\e909";
+  color: #555a84;
+}
 .icon-keyboard_arrow_down:before {
   content: "\e901";
 }
 .icon-chevron-down:before {
   content: "\e902";
+}
+.icon-arrow-right:before {
+  content: "\e903";
+}
+.icon-cheveron-down:before {
+  content: "\e900";
 }
 .icon-quotes-left:before {
   content: "\e977";
@@ -29,10 +54,4 @@
 }
 .icon-search:before {
   content: "\e986";
-}
-.icon-arrow-right:before {
-  content: "\e903";
-}
-.icon-cheveron-down:before {
-  content: "\e900";
 }

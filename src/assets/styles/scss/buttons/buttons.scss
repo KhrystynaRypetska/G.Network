@@ -1,7 +1,7 @@
 .btn {
   display: block;
 
-  max-width: 150px;
+  max-width: 100px;
   width: 100%;
 
   margin: 0 auto;
@@ -14,7 +14,7 @@
   font-family: $fontPoppinsRegular;
   text-decoration: none;
   text-transform: uppercase;
-  transition: color, background-color, border-color .3s ease-in-out;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
   border: 1px solid transparent;
 
   &--main {
@@ -26,7 +26,7 @@
       color: $textColor;
 
       border-color: #00B9F0;
-      transition: color, background-color, border-color .3s ease-in-out;
+      transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
     }
   }
 }

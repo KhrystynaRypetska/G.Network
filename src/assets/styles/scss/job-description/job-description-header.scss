@@ -1,0 +1,50 @@
+.job-description {
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+
+    border-bottom: 1px solid $Gray2;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+
+    &_action {
+      flex-basis: 150px;
+      flex-shrink: 0;
+      @media (max-width: 480px) {
+        flex-basis: auto;
+      }
+    }
+
+    &_title{
+      margin-bottom: 16px;
+
+      h1 {
+        color: $textDark;
+        font-family: $fontPoppinsSemiBold;
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      & ~ div {
+        margin-bottom: 16px;
+      }
+    }
+
+    &_time {
+      p {
+        display: flex;
+
+        color: $Gray2;
+        font-family: $fontPoppinsRegular;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}

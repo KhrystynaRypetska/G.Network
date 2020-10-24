@@ -1,0 +1,40 @@
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 0 -15px;
+
+  &_wrapper {
+    margin: 20px 0 40px;
+  }
+
+  &_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 15px;
+    a {
+
+      font-family: $fontPoppinsMedium;
+      color: #888CAC;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    &.active {
+      a {
+        color: $textColor;
+      }
+    }
+  }
+
+  &_divider {
+    span {
+      &:before {
+        color: #888CAC;
+      }
+    }
+  }
+}

@@ -96,6 +96,11 @@ const plugins = () => {
             template: './careers.html',
             minify: false
         }),
+        new HTMLWebpackPlugin({
+            filename: 'job-description.html',
+            template: './job-description.html',
+            minify: false
+        }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
             patterns: [
